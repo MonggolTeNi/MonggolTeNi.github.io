@@ -1,0 +1,777 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="常用命令," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Linux常见的命令1、ls命令ls -a 除了显示一般文件名外，还会显示隐藏文件ls -l 需要查看更详细的文件资料Ls -F 在列出的文件、目录名称后加一符号，对可执行文件添加一个*号，为目录添加一个/号，为符号链接添加一个@号
+2、cd 命令cd - 回到上一次工作的地方cd ~ 回到家目录cd/ 回到根目录cd ../../../../../../../../  路径较深时，回到根目录绝对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令">
+<meta property="og:url" content="http://yoursite.com/2016/12/02/Linux常用命令/index.html">
+<meta property="og:site_name" content="Wolf Rider' Blog">
+<meta property="og:description" content="Linux常见的命令1、ls命令ls -a 除了显示一般文件名外，还会显示隐藏文件ls -l 需要查看更详细的文件资料Ls -F 在列出的文件、目录名称后加一符号，对可执行文件添加一个*号，为目录添加一个/号，为符号链接添加一个@号
+2、cd 命令cd - 回到上一次工作的地方cd ~ 回到家目录cd/ 回到根目录cd ../../../../../../../../  路径较深时，回到根目录绝对">
+<meta property="og:updated_time" content="2016-12-02T12:39:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux常用命令">
+<meta name="twitter:description" content="Linux常见的命令1、ls命令ls -a 除了显示一般文件名外，还会显示隐藏文件ls -l 需要查看更详细的文件资料Ls -F 在列出的文件、目录名称后加一符号，对可执行文件添加一个*号，为目录添加一个/号，为符号链接添加一个@号
+2、cd 命令cd - 回到上一次工作的地方cd ~ 回到家目录cd/ 回到根目录cd ../../../../../../../../  路径较深时，回到根目录绝对">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Linux常用命令 | Wolf Rider' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Wolf Rider' Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Linux常用命令
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-02T20:22:02+08:00" content="2016-12-02">
+              2016-12-02
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux命令/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux命令</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/02/Linux常用命令/" class="leancloud_visitors" data-flag-title="Linux常用命令">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Linux常见的命令"><a href="#Linux常见的命令" class="headerlink" title="Linux常见的命令"></a>Linux常见的命令</h1><p>1、ls命令<br>ls -a 除了显示一般文件名外，还会显示隐藏文件<br>ls -l 需要查看更详细的文件资料<br>Ls -F 在列出的文件、目录名称后加一符号，对可执行文件添加一个*号，为目录添加一个/号，为符号链接添加一个@号</p>
+<p>2、cd 命令<br>cd - 回到上一次工作的地方<br>cd ~ 回到家目录<br>cd/ 回到根目录<br>cd ../../../../../../../../  路径较深时，回到根目录<br>绝对路径和相对路径<br>相对路径：参照当前目录进行查找<br>cd ../init.d/<br>绝对路径：从根目录开始指定，一级一级递归查找，在任何目录下都能进入指定位置<br>cd /etc/init.d/<br>目录补全快捷键：Tab<br> <a id="more"></a><br>3、mkdir<br>mkdir建立新目录</p>
+<p>4、rmdir<br>rmdir删除空目录</p>
+<p>5、rm命令<br>rm -f  文件名 强行删除，不给出提示，慎用<br>rm -i 文件名 删除前询问，无法删除目录<br>rm -r 目录名 可删除全部目录和子目录和文件，删除前询问</p>
+<p>6、cp命令<br>cp -r 源文件 目的文件 连同源文件中的子目录一同拷贝<br>cp -b 源文件 目的文件 如果目的文件存在，则自动备份<br>远程拷贝<br>scp 1.txt root@172.18.12.81:/temp/<br>scp -r 文件夹 root@172.18.12.81:/temp/<br>scp root@172.18.12.81:/temp/2.txt ./<br>7、cat命令<br>cat -A 显示制表符   :set fileformat?<br>cat test 显示这个文件的内容<br>Cat file1 file2 按顺序显示内容<br>cat file1 file2&gt;file  把1,2的内容结合起来重定向到3中</p>
+<p>8、more命令<br>more翻页查看</p>
+<p>9、pwd 命令<br>pwd显示当前工作路径</p>
+<p>用户及用户组管理命令<br>10、useradd命令<br>useradd 用户名 -g 首要组名 -G次要组名 -d home目录名 -p密码</p>
+<p>11、userdel命令<br>userdel删除已经存在的账号</p>
+<p>12、groupadd命令<br>groupadd 创建一个新的用户组<br>groupdel 删除一个用户组</p>
+<p>13、passwd命令<br>passwd 修改用户密码<br>passwd 用户名 修改其他用户口令</p>
+<p>14、Su命令<br>su     切换用户，但没有把环境变量切换过来 环境变量使用的不是root用户的变量<br>su-    切换用户，也切换环境变量切换过来<br>sudo  这条命令提升用户权限</p>
+<p>chmod命令<br>chmod 777 1.sh  赋予全部权限<br>chmod g+x 1.sh   为用户组增加x权限 可以减<br>u宿主 g用户组 o其他<br>r 4 w 2x 1</p>
+<p>进程及任务管理命令<br>15、ps 命令<br>PS显示所有进程<br>ps -ef | grep http<br>ps -u tt  查看指定用户的进程<br>ps -ef | grep sshd | grep -v “grep”  不显示grep这一行<br>ps -ef | grep sshd | grep -v “grep”|awk ‘{print $2}’   awk取单独的一列<br>ps -ef |more 翻页查看进程</p>
+<p>16、top命令<br>top 动态显示进程<br>其中，zombie 如果非零表示有进程挂死，id 表示空闲cpu百分比，wa表示读写速度</p>
+<p>17、kill命令<br>kill 终止后台进程<br>kill -9 表示强制停止</p>
+<p>磁盘及文件管理命令<br>18、df命令<br>df -h  显示目前磁盘剩余空间，人可以看懂的 以M为单位<br>du -h –max-depth=1 abc/    查看abc下文件深度为1的文件的大小</p>
+<p>19、mount挂载命令<br>mount 挂接的设备 在系统的挂接点<br>mount /dev/sdb  mnt/usb</p>
+<p>文件的操作<br>20、cat命令<br>cat -n 显示行号<br>cat -A 显示制表符</p>
+<p>21、vi的使用<br>一般模式（i o a）<br>编辑模式esc退出<br>指令模式 ： /<br>显示行号 /echo :set nu<br>10加向下键：向下10行<br>40<space>:向右移动40个字节<br>40<enter>:向下移动40行<br>0第一个字节，$最后一个字节<br>H当前页最前头，M中间，L最后<br>G是文档最后一行，1+G（gg）文档第一行 G控制行号<br>/用来做匹配<br>n翻到下一页 N翻到上一页<br>X向前删除  x向后删除 nx 向后删除n个字符<br>：1，$s/too/tootoo/g  从第一页到最后 替换<br>：1，$s/too/tootoo/gc 替换前询问<br>dd 删除整行，10 dd 删除十行<br>在shell里清空 echo &gt;qq.txt    :&gt;qq.txt<br> yy p 复制  20yy 向下复制20行  yy20一行复制20遍<br>Ctrl r 恢复<br>u 撤销<br>：set nu 显示行号<br>：set nonu 不显示行号<br>O在上面新增一行 o在下面新增一行<br>8dd 删除八行<br>：w man.txt另存为<br>/\<to\> 在vi中精确查找<br>网络配置<br>22、ifconfig命令<br>ifconfig 配置IP和子网掩码 关机后不保存<br>ifconfig   网络设备名   IP地址 :设置ip地址<br>ifconfig eth0 up/down  暂时启用或关闭网卡<br>ifconfig  网络设备名  netmask 子网掩码  设置子网掩码<br>ifconfig  eth0  192.168.0.1  netmask 255.255.255.0  同时设置ip地址和子网掩码</to\></enter></space></p>
+<p>23、route命令<br>route 查看本机路由<br>添加一条路由表项，网段 192.168.0.x 应该从接口”eth0”走<br>route add -net  192.168.0.0 netmask 255.255.255.0 dev eth0<br>添加默认路由<br>route add  -net 0.0.0.0  gw 网关地址<br>删除默认路由<br>rnetstat -r<br>oute del  -net 0.0.0.0 gw 网关地址</p>
+<p>24、netstat命令<br>netstat 监控网络状态,列出端口状态<br>netstat -at 列出所有TCP<br>netstat -au 列出所有UDP<br>netstat -atp 列出所有TCP和进程<br>netstat -p  显示进程号和进程名称<br>netstat -l 列出监听端口状态</p>
+<p>25、nslookup命令/host 命令<br>nslookup [IP 地址/域名]</p>
+<p>26、ping<br>ping  [主机名/IP地址]</p>
+<p>网络配置文件的设置</p>
+<p>/etc/resolv.conf  配置DNS客户端<br>/etc/sysconfig/network-scripts   vi ifcfg-eth0  自动获取ip地址的设置<br>例：<br>vi ifcfg-eth0<br>BOOTPROTO=static<br>IPADDR=192.168.7.106<br>GATEWAY=192.168.7.1<br>NETMASK=255.255.255.0<br>DNS=192.168.7.1</p>
+<p>#BOOTPROTO=dhcp<br>ONBOOT=yes<br>/etc/hosts  存放Ip和域名的对应关系<br>service network restart 重新启动网络<br>/etc/services 中包含了服务名和端口号之间的映射</p>
+<p>网络操作方法<br>ftp 传输文件<br>telnet 登录到远程计算机上<br>ssh登录到远程计算机上</p>
+<p>27、tar命令<br>tar -cf test.tar.gz 1.txt 2.txt 将1,2压缩到test中<br>tar -xf test.tar.gz 解压</p>
+<p>文件的查找和匹配<br>28、find命令<br>find [-path ~] -options [-print -exec -ok]<br>-path：要查找的目录路径。<br>~ 表示HOME目录 . 表示当前目录   / 表示根目录</p>
+<p>-options常用的：<br>-name：按照名字查找<br>-perm：安装权限查找<br>-prune：不再当前指定的目录下查找<br>-user：文件属主来查找<br>-group：文件所属组来查找<br>-nogroup：查找无有效所属组的文件<br>-nouser：查找无有效属主的文件<br>-type：按照文件类型查找<br>      b:块设备文档<br>      d:目录<br>      c:字符设备文档<br>      P：管道文档<br>      l:符号链接文档<br>      f:普通文档</p>
+<p>-print 结果标准输出</p>
+<p>-exec：对匹配的文件执行该参数所给出的 shell命令。命令形式为command {} \;，注意{}与\;之间有空格<br>-ok让用户确认是否执行<br>例：<br>按名字查找<br>find . -name ‘[A-Z]<em>.txt’ -print  在当前目录和子目录中查找大写字母开头的txt文件<br>find /etc -name ‘host</em>‘ -print  在/etc及其子目录中，查找host开头的文件<br>find ~ -name ‘<em>‘ -print  在$HOME目录及其子目录中，查找所有文件<br>find . -name “out</em>“ -prune -o -name “<em>.txt” -print  在当前目录及子目录中，查找不是out开头的txt文件<br>按目录查找　　<br>find . ( -path “./aa” -o -path “./bb” ) -prune -o -name “</em>.txt” -print 　  在当前目录及除aa和bb之外的子目录中查找txt文件<br>find . ! -name “.” -type d -prune -o -type f -name “*.txt” -print  在当前目录，不在子目录中，查找txt文件</p>
+<p>按权限查找<br>find . -perm 755 -print<br>按类型查找<br>find . -type l -print 在当前目录及子目录下，查找符号链接文件 　<br>按属主与属组查找<br>find / -user www -type f -print 　属主是www<br>find / -nouser -type f -print  查找属主被删除的文件<br>find / -group mysql -type f -print  查找属组mysql的文件<br>按时间查找<br>find . -mtime -2 -type f -print 查找2天内被更改过的文件<br>find . -mtime +2 -type f -print 查找2天前被更改过的文件<br>find . -atime -1 -type f -print  查找一天内被访问的文件<br> find . -ctime -1 -type f -print  查找一天内状态被改变的文件<br>find . -cmin +10 -type f -print  查找10分钟以前状态被改变的文件<br>按文件新旧查找<br>find . -newer “aa.txt” -type f -print  查找比aa.txt新的文件<br>find . ! -newer “aa.txt” -type f -print  查找比aa.txt旧的文件<br>find . -newer ‘aa.txt’ ! -newer ‘bb.txt’ -type f -print  查找比aa.txt新，比bb.txt旧的文件<br>按大小查找<br>find / -size +1M -type f -print   查找超过1M的文件<br> find . -size 6c -print  查找等于6字节的文件<br> find . -size -32k -print  查找小于32k的文件<br>执行文件<br> find . -name ‘del.txt’ -ok rm {} \;   查找del.txt并删除，删除前提示确认<br> find . -name ‘aa.txt’ -exec cp {} {}.bak \;  查找aa.txt 并备份为aa.txt.bak</p>
+<p>29、grep命令<br>cat 1.txt | grep -w “all”  匹配单词all<br>cat 1.txt | grep -w “all” –color=auto  加入自动颜色<br>ps -ef | grep ssh | grep -v grep    -v取反<br>grep -c “all” 1.txt  统计出现的次数<br>grep -n “all” 1.txt  显示匹配的行数<br>grep “all” 1.txt 2.txt 4.txt 显示匹配的文件和匹配所在行<br> grep -l “all” 1.txt 2.txt 4.txt 只显示匹配的文件<br>cat 1.txt | grep -i “ALL”  忽略字符大小写匹配</p>
+<p>系统服务管理<br>service camsd stop   停止 camsd 服务<br>service oracled start 启动 oracled 服务<br>chkconfig –list [name]： 显示当前运行的所有服务，如果指定了name，那么只显示指定的服务在不同运行级 的状态。<br>chkconfig –add name 增加一项新的服务。<br>chkconfig –del name 删除一项服务<br>chkconfig –level httpd 2345 on 设置httpd在运行级别为2、3、4、5的情况下都是开的状态</p>
+<p>30、sed命令<br>sed   参数[-nefr]   动作[function]   文件<br>选项与参数：<br>-n ：使用安静(silent)模式。在一般 sed 的用法中，所有来自 STDIN 的数据一般都会被列出到<br>终端上。但如果加上 -n 参数后，则只有经过sed 特殊处理的那一行(或者动作)才会被列出来。<br>-e ：直接在指令列模式上进行 sed 的动作编辑；<br>-f ：直接将 sed 的动作写在一个文件内， -f filename 则可以运行 filename 内的 sed 动作；<br>-r ：sed 的动作支持的是延伸型正规表示法的语法。(默认是基础正规表示法语法)<br>-i ：直接修改读取的文件内容，而不是输出到终端。</p>
+<p>function：<br>a ：新增， a 的后面可以接字串，而这些字串会在新的一行出现(目前的下一行)～<br>c ：取代， c 的后面可以接字串，这些字串可以取代 n1,n2 之间的行！<br>d ：删除，因为是删除啊，所以 d 后面通常不接任何咚咚；<br>i ：插入， i 的后面可以接字串，而这些字串会在新的一行出现(目前的上一行)；<br>p ：列印，亦即将某个选择的数据印出。通常 p 会与参数 sed -n 一起运行～<br>s ：取代，可以直接进行取代的工作！通常这个 s 的动作可以搭配正规表示法！例如 1,20s/old/new/g 就是</p>
+<p>注意一下， sed 后面接的动作，必须以 ‘’ 两个单引号括住。<br>nl /etc/passwd | sed ‘2,5d’  列印行号，同时将第 2~5 行删除<br>nl /etc/passwd | sed ‘2d’   只要删除第 2 行<br>nl /etc/passwd | sed ‘3,$d’  要删除第 3 到最后一行<br>nl /etc/passwd | sed ‘2a drink tea’ 在第二行后(亦即是加在第三行)加上drink tea字样<br>nl passwd |sed ‘2i drink tea’|head -n 5|nl  在第二行上面添加<br>nl /etc/passwd | sed ‘2a Drink tea or  \  后按回车</p>
+<blockquote>
+<p>drink beer ‘ 增加两行以上，在第二行后面加入两行字Drink tea or 和drink beer<br>每一行之间都必须要以反斜杠\ 来进行新行的添加。<br>nl /etc/passwd | sed ‘2,5c No 2-5 number’ |head（tail） -n 10将第2-5行的内容替换成为『No 2-5 number』，并显示头10行或后10行<br>nl /etc/passwd | sed -n ‘5,7p’ 仅列出 /etc/passwd 文件内的第 5-7 行<br>nl /etc/passwd | sed ‘/root/p’ 搜索 /etc/passwd有root关键字的行<br>nl /etc/passwd | sed -n ‘/root/p’ 使用-n的时候将只打印包含模板的行。<br>nl /etc/passwd | sed  ‘/root/d’  删除/etc/passwd所有包含root的行，其他行输出<br>nl /etc/passwd | sed -n ‘/root/{s/bash/blueshell/;p}’   搜索/etc/passwd,找到root对应的行，执行后面花括号中的一组命令，每个命令之间用分号分隔， 这里把bash替换为blueshell，再输出这行<br>sed ‘s/要被取代的字串/新的字串/g’<br>/sbin/ifconfig eth0  利用 /sbin/ifconfig 查询 IP<br>/sbin/ifconfig eth0 | grep ‘inet addr’ | sed ‘s/^.<em>addr://g’  将 IP 前面的部分予以删除<br>/sbin/ifconfig eth0 | grep ‘inet addr’ | sed ‘s/^.</em>addr://g’ | sed ‘s/Bcast.*$//g’  将 IP 后面的部分予以删除<br>sed -i ‘s/.$/!/g’ regular_express.txt  将 regular_express.txt 内每一行结尾若为 . 则换成 !<br>sed -i ‘$a # This is a test’ regular_express.txt 接在 regular_express.txt 最后一行加入『# This is a test』</p>
+</blockquote>
+<p>31、awk命令<br>awk工作流程：读入有’\n’换行符分割的一条记录，然后将记录按指定的域分隔符划分域，<br>填充域，$0则表示所有域,$1表示第一个域,$n表示第n个域。默认域分隔符是”空白键” 或 “[tab]键”<br>cat /etc/passwd |awk  -F ‘:’  ‘{print $1}’   显示以：为分隔符的第1个域<br>cat /etc/passwd |awk  -F ‘:’  ‘{print $1”\t”$7}’<br>显示/etc/passwd的以：分割的第一个域和第七个域，并在他们之间添加一个tab键的距离<br>cat /etc/passwd |awk  -F ‘:’  ‘BEGIN {print “name,shell”}  {print $1”,”$7} END {print “blue,/bin/nosh”}’<br>显示/etc/passwd的以：分割的第一个域和第七个域，并在他们之间添加一个“，” 在第一行加上name,shell  最后一行添加”blue,/bin/nosh”<br>awk  ‘/root/‘ /etc/passwd  显示/etc/passwd有root关键字的所有行<br>awk  ‘/^root/‘ /etc/passwd 显示/etc/passwd开头为root的所有行<br>awk -F: ‘/root/{print $7}’ /etc/passwd 显示/etc/passwd有root关键字的行的第七列<br>awk -F ‘:’ ‘/root/{print “filename:” FILENAME “,linenumber:” NR “,columns:” NF “,linecontent:”$0}’ /etc/passwd<br>统计/etc/passwd:文件名，每行的行号，每行的列数，对应的root行的完整行内容<br>显示的内容为：<br>filename:/etc/passwd,linenumber:1,columns:7,linecontent:root:x:0:0:root:/root:/bin/bash<br>filename:/etc/passwd,linenumber:11,columns:7,linecontent:operator:x:11:0:operator:/root:/sbin/nologin</p>
+<p>32、touch命令<br>Touch 新建不存在的文件</p>
+<p>33、统计行号的命令<br>sed -n “$=”if .txt<br>wc -l if.txt | awk’{print $1}’<br>cat 1.txt | wc -l<br>wc -l 输出行数和文件名</p>
+<p>33、last -n 5   last 显示最近登录</p>
+<p>34、单引号和双引号区别<br>单引号将剥夺其中的所有字符的特殊含义，而双引号中的’$’（参数替换）和’`’（命令替换）是例外。所以，两者基本上没有什么区别，除非在内容中遇到了参数替换符$和命令替换符<br>‘’强制转义<br>$a 引用变量<br>‘$nu’强制转义为$nu<br>“$nu” 表示是一个整体参数</p>
+<p>35、Vi中的精确查找<br>/\<to\></to\></p>
+<p>36、/etc/inittab文件的作用<br>Linux启动之后运行的第一个进程init会从/etc/inittab 文件中读取配置并做一些初始化的工作<br>格式：<br>id:runlevels:action:process</p>
+<p>Id：用 于表示该配置项的id，长度为1~4个字符，id必须在本文件内唯一，如果有重复id，则init启动的时候会报duplicate id的错误，且后面的重复项配置将无效。这边可以将每一条配置项看作数据库中的一条记录，分号分割的部分为各个字段，将id号则可以看作记录的 Primary Key。<br>Runlevels：程序执行的运行级别。<br>Action<br>常见的action</p>
+<ul>
+<li>initdefault: 该配置项指定系统的默认运行级。</li>
+<li>respawn: 该配置项所指定的进程如果被结束，则重新启动该进程。</li>
+<li>wait: 该配置项指定的进程在运行结束之前不要执行下一条配置项。</li>
+<li>once: 切换到对应的运行级之后，仅执行指定的进程一次。</li>
+<li>sysinit: 无论以什么运行级启动，系统启动时都要执行该配置项指定的进程。</li>
+<li>boot: 仅在系统启动时执行一次。</li>
+<li>bootwait: 仅在系统启动时执行一次，在执行结束之前不执行下一条配置项</li>
+<li>powerfail: 当接收到UPS的断电通知时执行该项指定的进程。</li>
+<li>powerwait: 与powerfail相同，但init会等待进程执行结束。</li>
+<li>powerokwait: 接收到UPS的供电通知时执行。</li>
+<li>ctrlaltdel: 当用户同时按下 Ctrl+Alt+Del 时执行该项指定的进程。<br>process:指定的程序路径和参数</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/常用命令/" rel="tag">#常用命令</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/02/OSI七层网络模型常见的安全问题/" rel="next" title="OSI七层网络模型常见的安全问题">
+                <i class="fa fa-chevron-left"></i> OSI七层网络模型常见的安全问题
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/09/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Wolf Rider" />
+          <p class="site-author-name" itemprop="name">Wolf Rider</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux常见的命令"><span class="nav-number">1.</span> <span class="nav-text">Linux常见的命令</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wolf Rider</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("v400Szlk5KJu7PDH5Q5gzbSG-gzGzoHsz", "sIWWCodgjIjKp2zWNBEUGFlu");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

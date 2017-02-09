@@ -1,0 +1,872 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Hexo安装Next主题安装nextstep1首先从github上clone到本地，在终端cd / 切换到你通过Hexo init生成的根目录，然后在终端输入命令：
+
+
+$ git clone https://github.com/iissnan/hexo-theme-next themes/nextstep2进入站点的全局配置文件：_config.yml找到theme字段：设置为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo安装Next主题">
+<meta property="og:url" content="http://yoursite.com/2015/07/22/untitled-1471868565406/index.html">
+<meta property="og:site_name" content="Wolf Rider' Blog">
+<meta property="og:description" content="Hexo安装Next主题安装nextstep1首先从github上clone到本地，在终端cd / 切换到你通过Hexo init生成的根目录，然后在终端输入命令：
+
+
+$ git clone https://github.com/iissnan/hexo-theme-next themes/nextstep2进入站点的全局配置文件：_config.yml找到theme字段：设置为">
+<meta property="og:image" content="http://i.imgur.com/dAV8zWN.png">
+<meta property="og:image" content="http://i.imgur.com/5Y5M6cE.png">
+<meta property="og:image" content="http://i.imgur.com/wiesssa.png">
+<meta property="og:updated_time" content="2016-11-28T07:44:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo安装Next主题">
+<meta name="twitter:description" content="Hexo安装Next主题安装nextstep1首先从github上clone到本地，在终端cd / 切换到你通过Hexo init生成的根目录，然后在终端输入命令：
+
+
+$ git clone https://github.com/iissnan/hexo-theme-next themes/nextstep2进入站点的全局配置文件：_config.yml找到theme字段：设置为">
+<meta name="twitter:image" content="http://i.imgur.com/dAV8zWN.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Hexo安装Next主题 | Wolf Rider' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Wolf Rider' Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Hexo安装Next主题
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-22T20:22:45+08:00" content="2015-07-22">
+              2015-07-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/07/22/untitled-1471868565406/" class="leancloud_visitors" data-flag-title="Hexo安装Next主题">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Hexo安装Next主题"><a href="#Hexo安装Next主题" class="headerlink" title="Hexo安装Next主题"></a>Hexo安装Next主题</h1><h2 id="安装next"><a href="#安装next" class="headerlink" title="安装next"></a>安装next</h2><h3 id="step1"><a href="#step1" class="headerlink" title="step1"></a>step1</h3><p>首先从github上clone到本地，在终端cd / 切换到你通过Hexo init生成的根目录，<br>然后在终端输入命令：</p>
+<blockquote>
+<ol>
+<li>$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next<h3 id="step2"><a href="#step2" class="headerlink" title="step2"></a>step2</h3>进入站点的全局配置文件：_config.yml<br>找到theme字段：设置为</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<ol>
+<li><p>theme: next</p>
+<h3 id="step3"><a href="#step3" class="headerlink" title="step3"></a>step3</h3><p>到这里可以验证一下主题是否被启用。终端输入：</p>
+</li>
+<li><p>hexo s – debug</p>
+</li>
+</ol>
+</blockquote>
+<p>然后本地访问<a href="http://localhost:4000，看看效果，在没有部署到github上之前，一般都可以这样在本地进行预览。" target="_blank" rel="external">http://localhost:4000，看看效果，在没有部署到github上之前，一般都可以这样在本地进行预览。</a></p>
+<p>关于站点全局_config.yml配置文件的其他一些参数：</p>
+<blockquote>
+<ol>
+<li># Site</li>
+<li>title: 朝夕 #博客名</li>
+<li>subtitle: 朝闻道，夕死可以。 #博客副标题</li>
+<li>description: #给搜索引擎看的，对站点的描述，可以自定义</li>
+<li>author: 童星 #作者名称，显示在网站最底部</li>
+<li>language: zh-Hans #语言选择，这里表示中文</li>
+<li>email: #你的联系邮箱</li>
+<li>timezone:</li>
+<li></li>
+<li># URL</li>
+<li>## If your site is put in a subdirectory, set url as ‘<a href="http://yoursite.com/child">http://yoursite.com/child</a>‘ and root as ‘/child/‘</li>
+<li>url: chaserr.github.io  #可以填写你的站点域名</li>
+<li>root: /</li>
+<li>permalink: :year/:month/:day/:title/</li>
+<li>permalink_defaults:</li>
+<li></li>
+<li># Directory</li>
+<li>source_dir: source</li>
+<li>public_dir: public</li>
+<li>tag_dir: tags</li>
+<li>archive_dir: archives</li>
+<li>category_dir: categories</li>
+<li>code_dir: downloads/code</li>
+<li>i18n_dir: :lang</li>
+<li>skip_render:</li>
+<li></li>
+<li># Writing , 设置生成博文的默认格式</li>
+<li>new_post_name: :title.md # File name of new posts</li>
+<li>default_layout: post #默认布局</li>
+<li>titlecase: false # Transform title into titlecase</li>
+<li>external_link: true # Open external links in new tab</li>
+<li>filename_case: 0 #把文件名称转换为（1）小写或者大写</li>
+<li>render_drafts: #显示草稿</li>
+<li>post_asset_folder: false  #启动Asset文件夹</li>
+<li>relative_link: false #把链接改为与根目录相对位置</li>
+<li>future: true #显示未来的文章</li>
+<li>highlight: #代码块的设置</li>
+<li>enable: true</li>
+<li>line_number: true</li>
+<li>auto_detect: false</li>
+<li>tab_replace:</li>
+</ol>
+</blockquote>
+<p>默认的大致就这些，另外给主题添加相关功能的时候后面会慢慢加上其他一些参数。</p>
+<h2 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h2><h3 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h3><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
+<pre><code>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白
+Mist - Muse 的紧凑版本，整洁有序的单栏外观
+Pisces - 双栏 Scheme，小家碧玉似的清新
+</code></pre><p>Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 即可。<br>选择 Pisce Scheme</p>
+<blockquote>
+<ol>
+<li>#scheme: Muse</li>
+<li>#scheme: Mist</li>
+<li>scheme: Pisces</li>
+</ol>
+</blockquote>
+<h3 id="设置-语言"><a href="#设置-语言" class="headerlink" title="设置 语言"></a>设置 语言</h3><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：</p>
+<blockquote>
+<pre><code>language: zh-Hans
+</code></pre></blockquote>
+<p>目前 NexT 支持的语言如以下表格所示：<br><img src="http://i.imgur.com/dAV8zWN.png" alt=""></p>
+<h3 id="设置-菜单"><a href="#设置-菜单" class="headerlink" title="设置 菜单"></a>设置 菜单</h3><p>菜单配置包括两个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
+<p>编辑 主题配置文件 ,修改以下内容：</p>
+<p>设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<br>    菜单示例配置</p>
+<pre><code>  menu:
+home: /
+archives: /archives
+#about: /about
+#categories: /categories
+tags: /tags
+#commonweal: /404.html
+</code></pre><p>若你的站点运行在子目录中，请将链接前缀的 / 去掉NexT 默认的菜单项有（标注 的项表示需要手动创建这个页面）：</p>
+<p><img src="http://i.imgur.com/5Y5M6cE.png" alt=""></p>
+<p>设置菜单项的显示文本。在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 languages/{language}.yml （{language} 为你所使用的语言）。</p>
+<p>以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：</p>
+<blockquote>
+<pre><code>menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+  commonweal: 公益404
+  something: 有料
+</code></pre></blockquote>
+<p>设定菜单项的图标，对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。<br>菜单图标配置示例</p>
+<blockquote>
+<pre><code>menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
+</code></pre></blockquote>
+<p>在菜单图标开启的情况下，如果菜单项与菜单未匹配（没有设置或者无效的 Font Awesome 图标名字） 的情况下，NexT 将会使用 作为图标。</p>
+<p>请注意键值（如 home）的大小写要严格匹配</p>
+<h3 id="设置-侧栏"><a href="#设置-侧栏" class="headerlink" title="设置 侧栏"></a>设置 侧栏</h3><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 主题配置文件 中的 sidebar 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
+<pre><code>设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：
+    left - 靠左放置
+    right - 靠右放置
+
+目前仅 Pisces Scheme 支持 position 配置。影响版本5.0.0及更低版本。
+
+sidebar:
+  position: left
+
+设置侧栏显示的时机，修改 sidebar.display 的值，支持的选项有：
+    post - 默认行为，在文章页面（拥有目录列表）时显示
+    always - 在所有页面中都显示
+    hide - 在所有页面中都隐藏（可以手动展开）
+    remove - 完全移除
+
+sidebar:
+  display: post
+
+已知侧栏在 use motion: false 的情况下不会展示。 影响版本5.0.0及更低版本。
+</code></pre><h3 id="设置-头像"><a href="#设置-头像" class="headerlink" title="设置 头像"></a>设置 头像</h3><p>编辑 站点配置文件， 新增字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
+<p><img src="http://i.imgur.com/wiesssa.png" alt=""></p>
+<p>头像设置示例</p>
+<blockquote>
+<pre><code>avatar: http://example.com/avtar.png
+</code></pre></blockquote>
+<h3 id="设置-作者昵称"><a href="#设置-作者昵称" class="headerlink" title="设置 作者昵称"></a>设置 作者昵称</h3><p>编辑 站点配置文件， 设置 author 为你的昵称。</p>
+<h3 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h3><p>编辑 站点配置文件， 设置 description 字段为你的站点描述。站点描述可以是你喜欢的一句签名:) </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/21/Hexo-Next/" rel="next" title="Hexo + Github搭建自己的博客">
+                <i class="fa fa-chevron-left"></i> Hexo + Github搭建自己的博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/07/22/untitled-1471871080985-1/" rel="prev" title="Hexo使用过程中碰到的问题">
+                Hexo使用过程中碰到的问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Wolf Rider" />
+          <p class="site-author-name" itemprop="name">Wolf Rider</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo安装Next主题"><span class="nav-number">1.</span> <span class="nav-text">Hexo安装Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装next"><span class="nav-number">1.1.</span> <span class="nav-text">安装next</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#step1"><span class="nav-number">1.1.1.</span> <span class="nav-text">step1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#step2"><span class="nav-number">1.1.2.</span> <span class="nav-text">step2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#step3"><span class="nav-number">1.1.3.</span> <span class="nav-text">step3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题设定"><span class="nav-number">1.2.</span> <span class="nav-text">主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择-Scheme"><span class="nav-number">1.2.1.</span> <span class="nav-text">选择 Scheme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-语言"><span class="nav-number">1.2.2.</span> <span class="nav-text">设置 语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-菜单"><span class="nav-number">1.2.3.</span> <span class="nav-text">设置 菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-侧栏"><span class="nav-number">1.2.4.</span> <span class="nav-text">设置 侧栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-头像"><span class="nav-number">1.2.5.</span> <span class="nav-text">设置 头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-作者昵称"><span class="nav-number">1.2.6.</span> <span class="nav-text">设置 作者昵称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点描述"><span class="nav-number">1.2.7.</span> <span class="nav-text">站点描述</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wolf Rider</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("v400Szlk5KJu7PDH5Q5gzbSG-gzGzoHsz", "sIWWCodgjIjKp2zWNBEUGFlu");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Nessus," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="安装Nessus工具Nessus简介Nessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的漏洞分析扫描。对应渗透测试人员来说，Nessus是必不可少的工具之一。
+Nessus概述Nessus通常包括成千上万的最新的漏洞，各种各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装Nessus工具">
+<meta property="og:url" content="http://yoursite.com/2015/10/24/untitled-1472042258563/index.html">
+<meta property="og:site_name" content="Wolf Rider' Blog">
+<meta property="og:description" content="安装Nessus工具Nessus简介Nessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的漏洞分析扫描。对应渗透测试人员来说，Nessus是必不可少的工具之一。
+Nessus概述Nessus通常包括成千上万的最新的漏洞，各种各">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145159_p3ys_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145159_Kanp_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145200_7XYM_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145200_AvyN_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145200_z77H_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145200_OeZq_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145201_bFfq_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145201_bmV3_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145201_6fgR_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145309_4rHL_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145310_zyxg_1585857.png">
+<meta property="og:image" content="http://static.oschina.net/uploads/space/2015/0710/145310_mlhN_1585857.png">
+<meta property="og:updated_time" content="2016-11-28T07:46:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装Nessus工具">
+<meta name="twitter:description" content="安装Nessus工具Nessus简介Nessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的漏洞分析扫描。对应渗透测试人员来说，Nessus是必不可少的工具之一。
+Nessus概述Nessus通常包括成千上万的最新的漏洞，各种各">
+<meta name="twitter:image" content="http://static.oschina.net/uploads/space/2015/0710/145159_p3ys_1585857.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 安装Nessus工具 | Wolf Rider' Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Wolf Rider' Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                安装Nessus工具
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-10-24T20:37:38+08:00" content="2015-10-24">
+              2015-10-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/10/24/untitled-1472042258563/" class="leancloud_visitors" data-flag-title="安装Nessus工具">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="安装Nessus工具"><a href="#安装Nessus工具" class="headerlink" title="安装Nessus工具"></a>安装Nessus工具</h1><h2 id="Nessus简介"><a href="#Nessus简介" class="headerlink" title="Nessus简介"></a>Nessus简介</h2><p>Nessus号称是世界上最流行的漏洞扫描程序，全世界有超过75000个组织在使用它。该工具提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。Nessus不同于传统的漏洞扫描软件，Nessus可同时在本机或远端上遥控，进行系统的漏洞分析扫描。对应渗透测试人员来说，Nessus是必不可少的工具之一。</p>
+<h3 id="Nessus概述"><a href="#Nessus概述" class="headerlink" title="Nessus概述"></a>Nessus概述</h3><p>Nessus通常包括成千上万的最新的漏洞，各种各样的扫描选项，及易于使用的图形界面和有效的报告。Nessus之所以被人们喜爱，是因为该工具具有几个特点。如下所示：</p>
+ <a id="more"></a>
+<pre><code>q  提供完整的电脑漏洞扫描服务，并随时更新其漏洞数据库。
+
+q  不同于传统的漏洞扫描软件。Nessus可同时在本机或远程控制，进行系统的漏洞分析扫描。
+
+q  其运作效能随着系统的资源而自行调整。如果将主机配置更多的资源（如加快CPU速度或增加内存大小），其效率表现可因为丰富资源而提高。
+
+q  可自行定义插件。
+
+q  NASL（Nessus Attack Scripting Language）是由Tenable所发出的语言，用来写入Nessus的安全测试选项。
+
+q  完全支持SSL（Secure Socket Layer）。
+</code></pre><h2 id="安装Nessus工具-1"><a href="#安装Nessus工具-1" class="headerlink" title="安装Nessus工具"></a>安装Nessus工具</h2><h3 id="获取Nessus软件"><a href="#获取Nessus软件" class="headerlink" title="获取Nessus软件"></a>获取Nessus软件</h3><p>在安装Nessus工具之前，首先要获取该工具的安装包。而且，Nessus工具安装后，必须要激活才可使用。所以，下面将分别介绍获取Nessus安装包和激活码的方法。</p>
+<p>1.获取Nessus安装包</p>
+<p>Nessus的官方下载地址是：</p>
+<p><a href="http://www.tenable.com/products/nessus/select-your-operating-system" target="_blank" rel="external">http://www.tenable.com/products/nessus/select-your-operating-system</a></p>
+<p>在浏览器中输入以上地址，将打开如图所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145159_p3ys_1585857.png" alt=""></p>
+<p>从该界面可以看到Nessus有两个版本，分别是Home（家庭版）和Professional（专业版）。这两个版本的区别如下所示：</p>
+<pre><code>q  家庭版：家庭版是免费的，主要是供非商业性或个人使用。该版比较适合个人使用，并且可以用于非专业的环境。
+
+q  专业版：专业版是需要付费的。但是，可以免费使用七天。该版主要是供商业人士使用。它包括技术支持或附加功能，如无线并发连接等。
+</code></pre><p>对于大部分人来说，家庭版的功能都可以满足。所以，这里选择下载家庭版。在该界面单击Nessus Home下面的Download按钮，将显示如图所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145159_Kanp_1585857.png" alt=""></p>
+<p>从该界面可以看到，官网提供了Nessus工具各种平台的安装包，如Windows、Mac OS X、Linux、FreeBSD等。用户可以根据自己的操作系统及架构，选择对应的安装包。例如，下载Windows 64位架构的包，则单击Nessus-6.3.7-x64.msi。单击该软件包后，将弹出如图1.3所示的对话框。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145200_7XYM_1585857.png" alt=""></p>
+<p>该界面显示了下载Nessus软件包的许可证协议信息。这里单击Agree按钮，即可开始下载。</p>
+<p>2.获取激活码</p>
+<p>在使用Nessus之前，必须先激活该服务才可使用。如果要激活Nessus服务，则需要到官网获取一个激活码。下面将介绍获取激活码的方法。具体操作步骤如下所示：</p>
+<p>（1）在浏览器中输入以下地址：</p>
+<p><a href="http://www.nessus.org/products/nessus/nessus-plugins/obtain-an-activation-code" target="_blank" rel="external">http://www.nessus.org/products/nessus/nessus-plugins/obtain-an-activation-code</a></p>
+<p>成功访问以上链接后，将打开如图所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145200_AvyN_1585857.png" alt=""></p>
+<p>（2）在该界面单击Nessus Home Free下面的Register Now按钮，将显示如图所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145200_z77H_1585857.png" alt=""></p>
+<p>（3）在该界面填写一些信息，为了获取激活码。在该界面First Name和Last Name文本框中，用户可以任意填写。但是，Email下的文本框必须填写一个合法的邮件地址，用来获取邮件。当以上信息设置完成后，单击Register按钮。接下来，将会在注册的邮箱中收到一份关于Nessus的邮件。进入邮箱打开收到的邮件，将会看到一串数字，类似XXXX-XXXX-XXXX-XXXX，即激活码。</p>
+<p>（4）当成功安装Nessus工具后，就可以使用以上获取到的激活码来激活该服务了。</p>
+<h2 id="Nessus工具在Windows下安装"><a href="#Nessus工具在Windows下安装" class="headerlink" title="Nessus工具在Windows下安装"></a>Nessus工具在Windows下安装</h2><p>下面将介绍在Windows下安装Nessus工具的方法。具体操作步骤如下所示：</p>
+<p>（1）双击下载的安装包，将弹出安装向导对话框，如图1.6所示。</p>
+<p>（2）该对话框显示了一些欢迎信息。此时单击Next按钮，将弹出许可证协议对话框，如图1.7所示。<br><img src="http://static.oschina.net/uploads/space/2015/0710/145200_OeZq_1585857.png" alt=""><br>图1.6  安装向导对话框   图1.7  许可证协议对话框</p>
+<p>（3）该界面显示了安装Nessus的许可证信息。此时，选择I accept the terms in the license agreement单选按钮。然后单击Next按钮，将弹出安装位置对话框，如图1.8所示。</p>
+<p>（4）该界面可以选择Nessus工具的安装位置，默认将安装在C:\Program Files\Tenable\Nessus\目录中。如果用户希望安装到其它位置，则单击Change…按钮，选择其安装位置。本例中使用默认的安装位置，并单击Next按钮，将弹出准备安装对话框，如图1.9所示。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145201_bFfq_1585857.png" alt=""></p>
+<p>图1.8  选择安装位置对话框    图1.9  准备安装对话框</p>
+<p>（5）该界面提示将开始安装Nessus工具。此时，单击Install按钮，将开始安装。安装完成后，将弹出安装完成向导对话框，如图1.10所示。</p>
+<p>（6）从该界面可以看到Nessus工具已安装完成。此时，单击Finish按钮，退出安装向导界面，将自动在网页中打开继续配置界面，如图1.11所示。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145201_bmV3_1585857.png" alt=""><br>  图1.10  安装完成对话框           图1.11  欢迎使用Nessus</p>
+<p>（7）该界面提示访问Nessus服务需要通过SSL协议，在该界面点击clicking here链接，将打开如图1.12所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145201_6fgR_1585857.png" alt=""></p>
+<p>图1.12  安全证书</p>
+<p>（8）该界面提示证书存在错误，是因为该站点使用了不受信任的自签名的SSL证书。如果确认该站点没问题，则单击“继续浏览此网站”选项，将显示如图1.13所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145309_4rHL_1585857.png" alt=""></p>
+<p>图1.13  欢迎信息  图1.14  初始化用户设置 </p>
+<p>（9）该界面显示了Nessus工具的欢迎信息。此时，单击Continue按钮，将显示如图1.14所示的界面。 </p>
+<p>（10）该界面用来创建一个帐号，用户管理Nessus服务。这里创建一个名为admin的用户，并为该用户设置一个密码。设置完成后，单击Continue按钮，将显示如图1.15所示的界面。</p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145310_zyxg_1585857.png" alt=""></p>
+<p>图1.15  填写激活码  图1.16  加载Nessus插件</p>
+<p>（11）在该界面Activation Code对应的文本框中，输入前面获取到的激活码。然后，单击Continue按钮，将开始加载Nessus中的插件，如图1.16所示。</p>
+<p>（12）从该界面可以看到正在下载插件，并进行初始化。此过程，大概需要十分钟的时间。当初始化完成后，将显示如图1.17所示的界面。</p>
+<p>（13）该界面是登录Nessus服务界面。在该界面输入的用户名和密码，就是在前面初始化过程中创建的用户和密码。输入用户名和密码后，单击Sign In按钮，即可成功登录Nessus服务。</p>
+<p>提示：以上过程中的Nessus服务登录界面，是自动弹出的。当用户关闭后，则需要重新登录。此时，用户在浏览器中输入<a href="https://IP:8834/或https://主机名:8834/地址，即可打开如图1.12所示的界面。然后，选择“继续浏览此网站”选项，即可打开登录页面。" target="_blank" rel="external">https://IP:8834/或https://主机名:8834/地址，即可打开如图1.12所示的界面。然后，选择“继续浏览此网站”选项，即可打开登录页面。</a></p>
+<p><img src="http://static.oschina.net/uploads/space/2015/0710/145310_mlhN_1585857.png" alt=""></p>
+<p>图1.17  登录Nessus服务</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Nessus/" rel="tag">#Nessus</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/18/untitled-1474196845452/" rel="next" title="python爬虫之抓取糗事百科段子">
+                <i class="fa fa-chevron-left"></i> python爬虫之抓取糗事百科段子
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/10/php复制整个文件目录的实现/" rel="prev" title="php复制整个文件目录的实现">
+                php复制整个文件目录的实现 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Wolf Rider" />
+          <p class="site-author-name" itemprop="name">Wolf Rider</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Nessus工具"><span class="nav-number">1.</span> <span class="nav-text">安装Nessus工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nessus简介"><span class="nav-number">1.1.</span> <span class="nav-text">Nessus简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nessus概述"><span class="nav-number">1.1.1.</span> <span class="nav-text">Nessus概述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Nessus工具-1"><span class="nav-number">1.2.</span> <span class="nav-text">安装Nessus工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#获取Nessus软件"><span class="nav-number">1.2.1.</span> <span class="nav-text">获取Nessus软件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nessus工具在Windows下安装"><span class="nav-number">1.3.</span> <span class="nav-text">Nessus工具在Windows下安装</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wolf Rider</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("v400Szlk5KJu7PDH5Q5gzbSG-gzGzoHsz", "sIWWCodgjIjKp2zWNBEUGFlu");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
